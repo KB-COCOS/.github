@@ -1,0 +1,12 @@
+name: 验收打回记录
+description: 验收不通过时创建
+type: "Review Reject"
+title: "[Review-Reject] "
+body:
+  - type: textarea
+    id: reason
+    attributes:
+      label: 打回原因
+      placeholder: 描述验收不通过的具体问题
+    validations:
+      required: true
