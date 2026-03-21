@@ -1,0 +1,31 @@
+name: Task 任务
+description: 开发任务
+type: "Task"
+title: "[Task] 前端/后端-"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 任务说明
+      placeholder: 简要描述开发内容
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: 故事点
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "5"
+        - "8"
+    validations:
+      required: true
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: 完成条件
+      placeholder: |
+        - [ ] 接口开发完成
+        - [ ] 联调通过
